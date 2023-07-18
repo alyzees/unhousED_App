@@ -23,9 +23,9 @@ struct ContentView: View {
         ScrollView{
             
             
-            VStack (spacing: 0){
+            VStack (alignment: .center, spacing: 0){
                 
-                Text("Currently, an estimated 46,260 people are unhoused in LA County").font(.system(size : 25.0, weight: .bold)).foregroundColor(darkBlue)
+                Text("Currently, an estimated 46,260 people are unhoused in Los Angeles County").font(.custom( "Karla", size : 25.0)).foregroundColor(darkBlue).fontWeight(.bold).multilineTextAlignment(.center).padding(.all, 20.0)
                 
                 Image("losAngelesLined").resizable().aspectRatio(contentMode: .fit)
             }

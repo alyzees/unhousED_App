@@ -11,6 +11,8 @@
 		BD25F67A2A672DFC002D7553 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25F6792A672DFC002D7553 /* ContentView.swift */; };
 		BD25F67C2A672E04002D7553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD25F67B2A672E04002D7553 /* Assets.xcassets */; };
 		BD25F67F2A672E04002D7553 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD25F67E2A672E04002D7553 /* Preview Assets.xcassets */; };
+		BDC2316D2A67434400FE76FF /* Karla-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDC2316C2A67434400FE76FF /* Karla-Italic-VariableFont_wght.ttf */; };
+		BDC231712A67454100FE76FF /* Karla-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDC231702A67454100FE76FF /* Karla-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,8 +21,9 @@
 		BD25F6792A672DFC002D7553 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD25F67B2A672E04002D7553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD25F67E2A672E04002D7553 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BDC2316A2A6741C100FE76FF /* Karla-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Italic-VariableFont_wght.ttf"; path = "../../../../Downloads/Karla/Karla-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		BDC2316B2A6741D100FE76FF /* Karla-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-VariableFont_wght.ttf"; path = "../../../../Downloads/Karla/Karla-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		BDC2316C2A67434400FE76FF /* Karla-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		BDC231702A67454100FE76FF /* Karla-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		BDC231722A6745DF00FE76FF /* unhousED-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "unhousED-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +56,11 @@
 		BD25F6762A672DFC002D7553 /* unhousED_App */ = {
 			isa = PBXGroup;
 			children = (
+				BDC231722A6745DF00FE76FF /* unhousED-App-Info.plist */,
 				BD25F6772A672DFC002D7553 /* unhousED_AppApp.swift */,
 				BD25F6792A672DFC002D7553 /* ContentView.swift */,
-				BDC2316A2A6741C100FE76FF /* Karla-Italic-VariableFont_wght.ttf */,
-				BDC2316B2A6741D100FE76FF /* Karla-VariableFont_wght.ttf */,
+				BDC231702A67454100FE76FF /* Karla-VariableFont_wght.ttf */,
+				BDC2316C2A67434400FE76FF /* Karla-Italic-VariableFont_wght.ttf */,
 				BD25F67B2A672E04002D7553 /* Assets.xcassets */,
 				BD25F67D2A672E04002D7553 /* Preview Content */,
 			);
@@ -130,7 +134,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD25F67F2A672E04002D7553 /* Preview Assets.xcassets in Resources */,
+				BDC231712A67454100FE76FF /* Karla-VariableFont_wght.ttf in Resources */,
 				BD25F67C2A672E04002D7553 /* Assets.xcassets in Resources */,
+				BDC2316D2A67434400FE76FF /* Karla-Italic-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +280,7 @@
 				DEVELOPMENT_TEAM = V78M6M9HUT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "unhousED-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +310,7 @@
 				DEVELOPMENT_TEAM = V78M6M9HUT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "unhousED-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
