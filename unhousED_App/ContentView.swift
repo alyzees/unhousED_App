@@ -21,6 +21,85 @@ struct ContentView: View {
     var body: some View {
         
         ScrollView{
+            VStack {
+                            Spacer()
+                            Image("houselogo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100.0, height: 100.0)
+                            Text("Welcome To")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color(red: 69/255, green: 123/255, blue: 141/255))
+                                .lineLimit(nil)
+                            Spacer()
+                                .frame(width: 5.0, height: 5.0)
+                            Text("unhousED")
+                                .font(.system(size: 55.0))
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color(red: 69/255, green: 123/255, blue: 141/255))
+                            Spacer()
+                            Text("Get Started")
+                                .font(.headline)
+                            Button(action: {
+            
+                            }) {
+                                Text("⌄")
+            
+                                    .font(.largeTitle)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 20.0, height: 20.0)
+            
+                            }
+                            Spacer()
+            
+                            HStack {
+            
+                                Text("Already joined? Continue ->")
+                            }
+                        }
+
+            
+            VStack {
+                            Spacer()
+                            Image("houselogo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100.0, height: 100.0)
+                            Text("Welcome To")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color(red: 69/255, green: 123/255, blue: 141/255))
+                                .lineLimit(nil)
+                            Spacer()
+                                .frame(width: 5.0, height: 5.0)
+                            Text("unhousED")
+                                .font(.system(size: 55.0))
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color(red: 69/255, green: 123/255, blue: 141/255))
+                            Spacer()
+                            Text("Get Started")
+                                .font(.headline)
+                            Button(action: {
+            
+                            }) {
+                                Text("⌄")
+            
+                                    .font(.largeTitle)
+                                    .fontWeight(.heavy)
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 20.0, height: 20.0)
+            
+                            }
+                            Spacer()
+            
+                            HStack {
+            
+                                Text("Already joined? Continue ->")
+                            }
+                        }
+
             
             
             VStack (alignment: .center, spacing: 0){
