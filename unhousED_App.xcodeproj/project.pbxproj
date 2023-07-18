@@ -19,6 +19,8 @@
 		BD25F6792A672DFC002D7553 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD25F67B2A672E04002D7553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD25F67E2A672E04002D7553 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDC2316A2A6741C100FE76FF /* Karla-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Italic-VariableFont_wght.ttf"; path = "../../../../Downloads/Karla/Karla-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		BDC2316B2A6741D100FE76FF /* Karla-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-VariableFont_wght.ttf"; path = "../../../../Downloads/Karla/Karla-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,8 @@
 			children = (
 				BD25F6772A672DFC002D7553 /* unhousED_AppApp.swift */,
 				BD25F6792A672DFC002D7553 /* ContentView.swift */,
+				BDC2316A2A6741C100FE76FF /* Karla-Italic-VariableFont_wght.ttf */,
+				BDC2316B2A6741D100FE76FF /* Karla-VariableFont_wght.ttf */,
 				BD25F67B2A672E04002D7553 /* Assets.xcassets */,
 				BD25F67D2A672E04002D7553 /* Preview Content */,
 			);
