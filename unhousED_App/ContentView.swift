@@ -8,15 +8,27 @@
 import SwiftUI
 //Example this is Emma :D
 //hey
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView{
+            ZStack{
+                VStack{
+                    // Emma work here
+                    Text("Main Page")
+                    
+                    
+                    
+                    
+                    
+                    
+                    // Alyzee work here
+                    Text("Main Page - About Us")
+                }
+                
+            }.background()
+            
         }
-        .padding()
     }
 }
 
