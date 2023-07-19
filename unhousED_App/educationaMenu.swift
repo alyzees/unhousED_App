@@ -15,8 +15,8 @@ struct educationMenu: View {
         
         VStack {
             Text("Educational guide and news")
-                .font(.title2)
-                .fontWeight(.semibold)
+                .font(.system(size: 25.0))
+                .fontWeight(.bold)
                 .foregroundColor(Color(red: 0.27058823529411763, green: 0.4823529411764706, blue: 0.5529411764705883))
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)
