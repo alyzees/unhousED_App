@@ -14,40 +14,57 @@ struct NavigationBar: View {
         let lightBlue = Color(red: 136/255,green: 179/255, blue: 193/255)
         
         
-        NavigationView{
-            HStack{
+        NavigationStack{
+            ScrollView{
                 
-                NavigationLink(destination: destinationTest()){
-                        Image(systemName: "house.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
+                // ToolBar
+                
+                NavigationView{
+                    HStack{
+                        
+                        NavigationLink(destination: destinationTest()){
+                            Image(systemName: "house.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
+                            
+                            
+                        }.frame(width:45.0).padding(15.0)
                         
                         
-                    }.frame(width:45.0).padding(15.0)
-
+                        NavigationLink(destination: destinationTest()){
+                            Image(systemName: "lightbulb").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
+                            
+                            
+                        }.frame(width:45.0).padding(15.0)
+                        
+                        NavigationLink(destination: destinationTest()){
+                            Image(systemName: "list.bullet.clipboard.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
+                            
+                            
+                        }.frame(width:45.0).padding(15.0)
+                        
+                        NavigationLink(destination: destinationTest()){
+                            Image(systemName: "heart.square").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
+                            
+                            
+                        }.frame(width:45.0).padding(15.0)
+                        
+                        
+                        
+                        
+                    }.frame(maxWidth: .infinity, maxHeight: .infinity).background(lightBlue)
+                }.frame(width: 350.0, height: 70.0).cornerRadius(10.0)
                 
-                NavigationLink(destination: destinationTest()){
-                    Image(systemName: "lightbulb").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
-                    
-                    
-                }.frame(width:45.0).padding(15.0)
-                
-                NavigationLink(destination: destinationTest()){
-                    Image(systemName: "list.bullet.clipboard.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
-                    
-                    
-                }.frame(width:45.0).padding(15.0)
-                
-                NavigationLink(destination: destinationTest()){
-                    Image(systemName: "heart.square").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
-                    
-                    
-                }.frame(width:45.0).padding(15.0)
-
                 
                 
                 
-            }.frame(maxWidth: .infinity, maxHeight: .infinity).background(lightBlue)
-        }.frame(width: 350.0, height: 70.0).cornerRadius(10.0)
+                
+                // End of ScrollView
+            }.frame(maxWidth: .infinity, maxHeight: .infinity).background(baseGray)
+            
+            
+        } // End of Navigation Stack
+        
     }
+        
 }
 
 struct NavigationBar_Previews: PreviewProvider {
