@@ -13,6 +13,8 @@
 		BD25F67F2A672E04002D7553 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD25F67E2A672E04002D7553 /* Preview Assets.xcassets */; };
 		BDC2316D2A67434400FE76FF /* Karla-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDC2316C2A67434400FE76FF /* Karla-Italic-VariableFont_wght.ttf */; };
 		BDC231712A67454100FE76FF /* Karla-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDC231702A67454100FE76FF /* Karla-VariableFont_wght.ttf */; };
+		BDF854102A688C9D005E7CA9 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8540F2A688C9D005E7CA9 /* NavigationBar.swift */; };
+		BDF854122A688E11005E7CA9 /* destinationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF854112A688E11005E7CA9 /* destinationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BDC2316C2A67434400FE76FF /* Karla-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		BDC231702A67454100FE76FF /* Karla-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		BDC231722A6745DF00FE76FF /* unhousED-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "unhousED-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BDF8540F2A688C9D005E7CA9 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		BDF854112A688E11005E7CA9 /* destinationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = destinationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				BDC231722A6745DF00FE76FF /* unhousED-App-Info.plist */,
 				BD25F6772A672DFC002D7553 /* unhousED_AppApp.swift */,
 				BD25F6792A672DFC002D7553 /* ContentView.swift */,
+				BDF8540F2A688C9D005E7CA9 /* NavigationBar.swift */,
+				BDF854112A688E11005E7CA9 /* destinationTest.swift */,
 				BDC231702A67454100FE76FF /* Karla-VariableFont_wght.ttf */,
 				BDC2316C2A67434400FE76FF /* Karla-Italic-VariableFont_wght.ttf */,
 				BD25F67B2A672E04002D7553 /* Assets.xcassets */,
@@ -149,6 +155,8 @@
 			files = (
 				BD25F67A2A672DFC002D7553 /* ContentView.swift in Sources */,
 				BD25F6782A672DFC002D7553 /* unhousED_AppApp.swift in Sources */,
+				BDF854122A688E11005E7CA9 /* destinationTest.swift in Sources */,
+				BDF854102A688C9D005E7CA9 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
