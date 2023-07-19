@@ -12,7 +12,7 @@ struct mainMenu: View {
     
     
     var body: some View {
-        VStack {
+        VStack(alignment: .center) {
             Text("Explore our content!")
                 .font(.title2)
                 .fontWeight(.semibold)
@@ -20,13 +20,31 @@ struct mainMenu: View {
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)
                 .padding(.vertical, -3.0)
-            Text("Being unhoused can affect anyone. So we encourage everyone to challenge themselves and their stigmas.")
+            
+                Text("Homelessness can affect ")
+                    .font(.title3)
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(red: 0.36470588235294116, green: 0.35294117647058826, blue: 0.3215686274509804)) +
+                Text("anyone. ")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.27058823529411763, green: 0.4823529411764706, blue: 0.5529411764705883))
+                    Text("So we encourage everyone to ")
+                    .font(.title3)
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(red: 0.36470588235294116, green: 0.35294117647058826, blue: 0.3215686274509804))
+            
+            +
+            Text("challenge themselves and their stigmas.")
                 .font(.title3)
-                .fontWeight(.regular)
-                .foregroundColor(Color(red: 0.36470588235294116, green: 0.35294117647058826, blue: 0.3215686274509804))
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 8.0)
-                .padding(.vertical, 10.0)
+                .fontWeight(.bold)
+                .foregroundColor(Color(red: 0.27058823529411763, green: 0.4823529411764706, blue: 0.5529411764705883))
+                
+    
+                
+            
+         
+         
             
             
             Image("skidrowline")
