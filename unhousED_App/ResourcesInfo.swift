@@ -17,16 +17,27 @@ struct ResourcesInfo: View {
     
     var body: some View {
         NavigationStack{
-            ScrollView{
+            
+            ZStack(alignment:.bottom){
                 
-                VStack {
-                    Text("Resources and Information on Assistance").font(.custom( "Karla", size : 25.0)).foregroundColor(darkBlue).fontWeight(.bold).multilineTextAlignment(.center)
+                
+                ScrollView{
                     
-                    Text("You may know someone, a loved one, friends, or a neighbor living or at risk of living unhoused. There are many (often unknown and unused) resources available to help someone.").font(.custom( "Karla", size : 20.0)).padding(15.0).multilineTextAlignment(.center).foregroundColor(darkBrown)
-                    
-                    Image("losAngelesMap")
+                    VStack {
+                        Text("Resources and Information on Assistance").font(.custom( "Karla", size : 25.0)).foregroundColor(darkBlue).fontWeight(.bold).multilineTextAlignment(.center)
+                        
+                        Text("You may know someone, a loved one, friends, or a neighbor living or at risk of living unhoused. There are many (often unknown and unused) resources available to help someone.").font(.custom( "Karla", size : 20.0)).padding(15.0).multilineTextAlignment(.center).foregroundColor(darkBrown)
+                        
+                        Image("losAngelesMap").resizable().aspectRatio(contentMode: .fit).cornerRadius(10.0).padding()
                     }
-            }.padding(0)
+                    
+                }.padding(0).foregroundColor(baseGray) // Scrollview
+                
+                NavigationBar()
+
+                
+            } // zstack
+            
             
         }
         

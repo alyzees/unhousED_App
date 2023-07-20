@@ -18,41 +18,38 @@ struct mainMenu: View {
                 ScrollView{
                     VStack(alignment: .center) {
                         Text("Explore our content!")
-                            .font(.title2)
+                            .font(.custom("Karla", size: 25.0))
                             .fontWeight(.semibold)
                             .foregroundColor(darkBlue)
                             .multilineTextAlignment(.center)
                             .lineLimit(nil)
-                            .padding(.vertical, -3.0)
+                            .padding(15.0)
                         
-                        Text("Homelessness can affect ")
-                            .font(.title3)
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(red: 0.36470588235294116, green: 0.35294117647058826, blue: 0.3215686274509804)) +
-                        Text("anyone. ")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color(red: 0.27058823529411763, green: 0.4823529411764706, blue: 0.5529411764705883))
-                        Text("So we encourage everyone to ")
-                            .font(.title3)
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(red: 0.36470588235294116, green: 0.35294117647058826, blue: 0.3215686274509804))
+                        Text("These educational guides dive deep into roots of homelessness in LA, and serves to re-frame society’s perspective towards unhoused people.").font(.custom("Karla", size: 20)).lineLimit(4).padding(.horizontal, 15.0).multilineTextAlignment(.center)
                         
-                        +
-                        Text("challenge themselves and their stigmas.")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color(red: 0.27058823529411763, green: 0.4823529411764706, blue: 0.5529411764705883))
-                        
-                        
-                        
-                        
+//                        Text("Homelessness can affect ")
+//                            .font(.title3)
+//                            .fontWeight(.regular)
+//                            .foregroundColor(darkBlue) +
+//                        Text("anyone. ")
+//                            .font(.title3)
+//                            .fontWeight(.bold)
+//                            .foregroundColor(darkBlue)
+//                        Text("So we encourage everyone to ")
+//                            .font(.title3)
+//                            .fontWeight(.regular)
+//                            .foregroundColor(darkBlue)
+//
+//                        +
+//                        Text("challenge themselves and their stigmas.")
+//                            .font(.title3)
+//                            .fontWeight(.bold)
+//                            .foregroundColor(darkBlue)
                         
                         
-                        
-                        
+
                         Image("skidrowline").resizable().aspectRatio(contentMode: .fit)
-                            //.resizable(capInsets: EdgeInsets(top: 3.0, leading: 1.0, bottom: 3.0, trailing: 1.0), resizingMode: .tile)
+                        //.resizable(capInsets: EdgeInsets(top: 3.0, leading: 1.0, bottom: 3.0, trailing: 1.0), resizingMode: .tile)
                         // review this ^^
                             
                         
@@ -67,7 +64,7 @@ struct mainMenu: View {
                             Text("Listen to people’s stories and experiences")
                                 .font(.headline)
                                 .foregroundColor(darkBlue)
-                                .padding(10.0)
+                                .padding(5.0)
                                 // does the border modifier have a radius parameter?
                             
                         }.frame(maxWidth: 250.0, minHeight: 60.0).padding(10.0).overlay(

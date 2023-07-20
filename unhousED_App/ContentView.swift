@@ -59,13 +59,13 @@ struct ContentView: View {
                     Spacer(minLength: 50.0).frame(height: 100.0)
                     
                     // Button
-                    NavigationLink(destination:MissionIntro()){
+                    NavigationLink(destination:MissionIntro().navigationBarBackButtonHidden(true)){
                         Text("Get Started").font(.custom("Karla", size: 20.0)).padding(.vertical, 20.0).foregroundColor(baseGray).fontWeight(.bold)
                     }.frame(width: 200).background(lightBlue).cornerRadius(15.0)
                     
                     
                     // ideally would like to align it to the bottom right corner of the screen
-                    NavigationLink(destination: mainMenu()){
+                    NavigationLink(destination: mainMenu().navigationBarBackButtonHidden(true)){
                         Text("Already joined? Continue Here!").font(.custom( "Karla", size : 20.0)).foregroundColor(lightBlue).underline()
                     }.padding(20.0)
 

@@ -66,7 +66,7 @@ struct MissionIntro: View {
                     Spacer(minLength: 10.0).frame(height: 20.0)
                     
                     // Button
-                    NavigationLink(destination:mainMenu()){
+                    NavigationLink(destination:mainMenu().navigationBarBackButtonHidden(true)){
                         Text("Explore").font(.system(size: 20.0)).padding(.vertical, 20.0).foregroundColor(baseGray).fontWeight(.bold)
                     }.frame(width: 200).background(lightBlue).cornerRadius(15.0).padding(.vertical, 20.0)
                     
