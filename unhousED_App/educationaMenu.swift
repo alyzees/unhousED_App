@@ -42,22 +42,25 @@ struct educationMenu: View {
                         
                         
                         HStack {
-                            ZStack {
-                                Image("encampment")
-                                    .resizable()
-                                    .padding( )
-                                    .frame(width: 200.0, height: 200.0).overlay{
-                                        
-                                    }
-                                Image("overlay")
-                                    .resizable()
-                                    .frame(width: 150.0, height: 150.0)
-                                
-                                Text("The history of homelessness in Los Angeles")
-                                    .foregroundColor(Color.white)
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 150.0, height: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
+                            NavigationLink(destination: mythsPage()){
+                                ZStack {
+                                    
+                                    Image("encampment")
+                                        .resizable()
+                                        .frame(width: 150.0, height: 150.0)
+                                    Image("overlay")
+                                        .resizable()
+                                        .frame(width: 150.0, height: 150.0)
+                                    
+                                    
+                                    
+                                    Text("The history of homelessness in Los Angeles")
+                                        .foregroundColor(Color.white)
+                                        .multilineTextAlignment(.center)
+                                        .frame(width: 150.0, height: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
+                                }
                             }
+                                
                             ZStack {
                                 Image("homeless")
                                     .resizable()

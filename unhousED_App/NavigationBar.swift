@@ -26,28 +26,28 @@ struct NavigationBar: View {
                 NavigationView{
                     HStack{
                         
-                        NavigationLink(destination: mainMenu().navigationBarBackButtonHidden(true)
-){
+                        // .navigationBarBackButtonHidden(true)
+                        
+                        NavigationLink(destination: mainMenu() .navigationBarBackButtonHidden(true)){
                             Image(systemName: "house.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
                         }.frame(width:45.0).padding(15.0)
                         
                         
-                        NavigationLink(destination: educationMenu().navigationBarBackButtonHidden(true)
-){
+                        NavigationLink(destination: educationMenu()){
                             Image(systemName: "lightbulb").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
                         }.frame(width:45.0).padding(15.0)
                         
-                        NavigationLink(destination: ResourcesInfo().navigationBarBackButtonHidden(true)){
+                        NavigationLink(destination: ResourcesInfo()){
                             Image(systemName: "list.bullet.clipboard.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
                         }.frame(width:45.0).padding(15.0)
                         
-                        NavigationLink(destination: Stories().navigationBarBackButtonHidden(true)){
+                        NavigationLink(destination: Stories()){
                             Image(systemName: "heart.square").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             

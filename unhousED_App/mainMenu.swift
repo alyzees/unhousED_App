@@ -82,7 +82,7 @@ struct mainMenu: View {
                        
                         
                         
-                        NavigationLink(destination:  mythsPage()) {
+                        NavigationLink(destination: educationMenu()) {
                             Text("Learn about the nuances of homelessness")
                                 .font(.headline)
                                 .foregroundColor(darkBlue)
