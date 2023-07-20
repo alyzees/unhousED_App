@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct NavigationBar: View {
+    
     var body: some View {
-        let baseGray = Color(red: 237/255, green: 234/255, blue:233/255);
-        let darkBlue = Color(red: 69/255, green: 123/255, blue: 141/255)
-        let lightBlue = Color(red: 136/255,green: 179/255, blue: 193/255)
+        
+        
+    let baseGray = Color(red: 237/255, green: 234/255, blue:233/255);
+    let darkBlue = Color(red: 69/255, green: 123/255, blue: 141/255)
+    let lightBlue = Color(red: 136/255,green: 179/255, blue: 193/255)
+    let darkBrown = Color(red: 93/255, green: 90/255, blue: 82/255)
         
         
         NavigationStack{
