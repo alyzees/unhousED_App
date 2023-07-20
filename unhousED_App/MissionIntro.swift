@@ -28,7 +28,7 @@ struct MissionIntro: View {
                     
                     Text("Currently, an estimated 46,260 people are unhoused in Los Angeles County").font(.custom( "Karla", size : 25.0)).foregroundColor(darkBlue).fontWeight(.bold).multilineTextAlignment(.center).padding([.top, .leading, .trailing], 25.0)
                     
-                    Image("LosAngelesLined").resizable().aspectRatio(contentMode: .fit)
+                    Image("losAngelesLined").resizable().aspectRatio(contentMode: .fit)
                     
                     
                     

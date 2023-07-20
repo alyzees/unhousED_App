@@ -26,26 +26,26 @@ struct NavigationBar: View {
                 NavigationView{
                     HStack{
                         
-                        NavigationLink(destination: destinationTest()){
+                        NavigationLink(destination: mainMenu()){
                             Image(systemName: "house.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
                         }.frame(width:45.0).padding(15.0)
                         
                         
-                        NavigationLink(destination: destinationTest()){
+                        NavigationLink(destination: educationMenu()){
                             Image(systemName: "lightbulb").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
                         }.frame(width:45.0).padding(15.0)
                         
-                        NavigationLink(destination: destinationTest()){
+                        NavigationLink(destination: ResourcesInfo()){
                             Image(systemName: "list.bullet.clipboard.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
                         }.frame(width:45.0).padding(15.0)
                         
-                        NavigationLink(destination: destinationTest()){
+                        NavigationLink(destination: Stories()){
                             Image(systemName: "heart.square").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
