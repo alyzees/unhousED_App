@@ -46,7 +46,9 @@ struct educationMenu: View {
                                 Image("encampment")
                                     .resizable()
                                     .padding( )
-                                    .frame(width: 152.0, height: 152.0)
+                                    .frame(width: 200.0, height: 200.0).overlay{
+                                        
+                                    }
                                 Image("overlay")
                                     .resizable()
                                     .frame(width: 150.0, height: 150.0)
@@ -54,7 +56,7 @@ struct educationMenu: View {
                                 Text("The history of homelessness in Los Angeles")
                                     .foregroundColor(Color.white)
                                     .multilineTextAlignment(.center)
-                                    .frame(height: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
+                                    .frame(width: 150.0, height: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
                             }
                             ZStack {
                                 Image("homeless")
