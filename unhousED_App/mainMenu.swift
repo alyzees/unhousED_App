@@ -23,7 +23,7 @@ struct mainMenu: View {
                             .foregroundColor(darkBlue)
                             .multilineTextAlignment(.center)
                             .lineLimit(nil)
-                            .padding(15.0)
+                            .padding([.top, .leading, .trailing], 15.0).padding(.bottom, 10.0)
                         
                         Text("These educational guides dive deep into roots of homelessness in LA, and serves to re-frame society’s perspective towards unhoused people.").font(.custom("Karla", size: 20)).lineLimit(4).padding(.horizontal, 15.0).multilineTextAlignment(.center)
                         
@@ -60,14 +60,16 @@ struct mainMenu: View {
                             .font(.title2)
                             .foregroundColor(Color(red: 0.337, green: 0.362, blue: 0.387))
                         
-                        NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        // .navigationBarBackButtonHidden(true)
+                        NavigationLink(destination: Stories()) {
                             Text("Listen to people’s stories and experiences")
                                 .font(.headline)
                                 .foregroundColor(darkBlue)
                                 .padding(5.0)
                                 // does the border modifier have a radius parameter?
-                            
-                        }.frame(maxWidth: 250.0, minHeight: 60.0).padding(10.0).overlay(
+                           
+                            // minHeight: 60.0
+                        }.frame(maxWidth: 250.0).padding(10.0).overlay(
                             
                             // apply a rounded border by adding an overlayed rounded rectangle
                             // all corner Radius does is border the edge and clips the view, without changing the border's view
@@ -80,22 +82,23 @@ struct mainMenu: View {
                        
                         
                         
-                        NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        NavigationLink(destination:  mythsPage()) {
                             Text("Learn about the nuances of homelessness")
                                 .font(.headline)
                                 .foregroundColor(darkBlue)
-                                .padding(10.0)
+                                .padding(5.0)
                             
-                        }.frame(maxWidth: 250.0, minHeight: 60.0).padding(10.0).overlay(
+                        }.frame(maxWidth: 250.0).padding(10.0).overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(darkBlue, lineWidth: 3)
                         )
                     
-                        NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        NavigationLink(destination: ResourcesInfo()) {
                             Text("View Important Resources")
                                 .font(.headline)
                                 .foregroundColor(darkBlue)
-                        }.frame(maxWidth: 250.0, minHeight: 60.0).padding(10.0).overlay(
+                            // just so the height of the final page doesn't look super different as a one-line text
+                        }.frame(maxWidth: 250.0, minHeight: 40.0).padding(10.0).overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(darkBlue, lineWidth: 3)
                             )
