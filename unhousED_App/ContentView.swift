@@ -27,71 +27,76 @@ struct ContentView: View {
         NavigationStack{
             
             
-            ScrollView{
+            ScrollView(){
+                
+                // Attempted to Nest the main vstack in an hstack so that it could be aligned to the middle vertically ==> didn't work, width wasn't the problem
+                
+                
+                VStack (alignment: .center, spacing: 0) {
+                    // no spacing so padding can be added manually
+                    
+                    // so it looks responsive on smaller screens
+                    Spacer(minLength: 100.0).frame(height: 150.0)
+                    
+                    Image("houselogo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 120.0, height: 120.0).padding(.all, 10.0)
+                    Spacer(minLength: 25.0).frame(height: 50.0)
+                    
+                    
+                    Text("Welcome To")
+                        .font(.system(size: 25.0))
+                        .fontWeight(.bold)
+                        .foregroundColor(darkBlue).padding(.all, 5.0)
+                    
+                                        
+                    Text("unhous\(Text("ED").foregroundColor(darkBlue))")
+                        .font(.system(size: 55.0))
+                        .fontWeight(.heavy)
+                        .foregroundColor(lightBlue).padding(.all, 5.0)
+                    
+                    Spacer(minLength: 50.0).frame(height: 100.0)
+                    
+                    // Button
+                    NavigationLink(destination:MissionIntro()){
+                        Text("Get Started").font(.system(size: 20.0)).padding(.vertical, 20.0).foregroundColor(baseGray).fontWeight(.bold)
+                    }.frame(width: 200).background(lightBlue).cornerRadius(15.0)
+                    
+                    
+                    // ideally would like to align it to the bottom right corner of the screen
+                    NavigationLink(destination: mainMenu()){
+                        Text("Already joined? Continue Here!").font(.custom( "Karla", size : 20.0)).foregroundColor(lightBlue).underline()
+                    }.padding(20.0)
 
-                
-                VStack {
-                                Spacer()
-                                Image("houselogo")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 100.0, height: 100.0)
-                                Text("Welcome To")
-                        .font(.system(size: 20.0))
-                                    .fontWeight(.bold)
-                                    .foregroundColor(darkBlue)
-                                   
-                                Spacer()
                     
                     
-                                    .frame(width: 5.0, height: 5.0)
-                    
-                                Text("unhousED")
-                                    .font(.system(size: 55.0))
-                                    .fontWeight(.heavy)
-                                    .foregroundColor(darkBlue)
-                    
-                    NavigationLink(destination:destinationTest()){
-                        Text("Get Started").font(.system(size: 20.0)).padding(25.0).foregroundColor(baseGray).fontWeight(.bold)
-                    }.frame(width: 220).background(lightBlue).cornerRadius(15.0)
-                    
-                    
-                                Spacer()
-                                Text("Get Started")
-                                    .font(.headline)
-                                Button(action: {
-                
-                                }) {
-                                    Text("⌄")
-                
-                                        .font(.largeTitle)
-                                        .fontWeight(.heavy)
-                                        .multilineTextAlignment(.center)
-                                        .frame(width: 20.0, height: 20.0)
-                
-                                }
-                                Spacer()
-                
-//                                HStack {
+//                    Text("Get Started")
+//                        .font(.headline)
+//                    Button(action: {
 //
-//                                    Text("Already joined? Continue ->")
-//                                }
-                }
-
-               // Spacer().frame(height:400)
+//                    }) {
+//                        Text("⌄")
+//
+//                            .font(.largeTitle)
+//                            .fontWeight(.heavy)
+//                            .multilineTextAlignment(.center)
+//                            .frame(width: 20.0, height: 20.0)
+//                    }
+                    
+                }.frame(maxWidth: .infinity, maxHeight: .infinity) // end of main VStack
                 
-                VStack (alignment: .center, spacing: 0){
-                    
-                    Text("Currently, an estimated 46,260 people are unhoused in Los Angeles County").font(.custom( "Karla", size : 25.0)).foregroundColor(darkBlue).fontWeight(.bold).multilineTextAlignment(.center).padding(.all, 20.0)
-                    
-                    Image("losAngelesLined").resizable().aspectRatio(contentMode: .fit)
-                }
-            }.frame(maxWidth: .infinity, maxHeight: .infinity).background(baseGray)
+                
+                
+                
+            }.background(baseGray)//.frame(maxWidth: .infinity, maxHeight: .infinity)
+            
+            // end of Scrollview
             
             
             
             
-        } // end of nav stack
+        } // end of navigation stack
         
         
     }
