@@ -18,28 +18,31 @@ struct NavigationBar: View {
     let darkBrown = Color(red: 93/255, green: 90/255, blue: 82/255)
         
         
-        NavigationStack{
-            ScrollView{
+        //NavigationStack{
+            //ScrollView{
                 
                 // ToolBar
                 
                 NavigationView{
                     HStack{
                         
-                        NavigationLink(destination: mainMenu()){
+                        NavigationLink(destination: mainMenu().navigationBarBackButtonHidden(true)
+){
                             Image(systemName: "house.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
                         }.frame(width:45.0).padding(15.0)
                         
                         
-                        NavigationLink(destination: educationMenu()){
+                        NavigationLink(destination: educationMenu().navigationBarBackButtonHidden(true)
+){
                             Image(systemName: "lightbulb").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
                         }.frame(width:45.0).padding(15.0)
                         
-                        NavigationLink(destination: ResourcesInfo()){
+                        NavigationLink(destination: ResourcesInfo().navigationBarBackButtonHidden(true)
+){
                             Image(systemName: "list.bullet.clipboard.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
@@ -62,10 +65,10 @@ struct NavigationBar: View {
                 
                 
                 // End of ScrollView
-            }.frame(maxWidth: .infinity, maxHeight: .infinity).background(baseGray)
+            //}.frame(maxWidth: .infinity, maxHeight: .infinity).background(baseGray)
             
             
-        } // End of Navigation Stack
+        //} // End of Navigation Stack
         
     }
         
