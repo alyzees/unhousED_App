@@ -46,7 +46,7 @@ struct ContentView: View {
                     
                     
                     Text("Welcome To")
-                        .font(.system(size: 25.0))
+                        .font(.custom("Karla", size: 25.0))
                         .fontWeight(.bold)
                         .foregroundColor(darkBlue).padding(.all, 5.0)
                     
@@ -60,7 +60,7 @@ struct ContentView: View {
                     
                     // Button
                     NavigationLink(destination:MissionIntro()){
-                        Text("Get Started").font(.system(size: 20.0)).padding(.vertical, 20.0).foregroundColor(baseGray).fontWeight(.bold)
+                        Text("Get Started").font(.custom("Karla", size: 20.0)).padding(.vertical, 20.0).foregroundColor(baseGray).fontWeight(.bold)
                     }.frame(width: 200).background(lightBlue).cornerRadius(15.0)
                     
                     

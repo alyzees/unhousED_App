@@ -105,12 +105,9 @@ struct educationMenu: View {
                 NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                     Text("Why do we use the term “unhoused”?")
                         .fontWeight(.bold)
-                        .foregroundColor(Color(red: 0.5333333333333333, green: 0.7019607843137254, blue: 0.7803921568627451))
+                        .foregroundColor(lightBlue)
                 }
-                Spacer()
-                    .frame(height: 60.0)
-                Text("Example")
-                Text("example")
+
             }
             
             

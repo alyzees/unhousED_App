@@ -41,14 +41,13 @@ struct NavigationBar: View {
                             
                         }.frame(width:45.0).padding(15.0)
                         
-                        NavigationLink(destination: ResourcesInfo().navigationBarBackButtonHidden(true)
-){
+                        NavigationLink(destination: ResourcesInfo().navigationBarBackButtonHidden(true)){
                             Image(systemName: "list.bullet.clipboard.fill").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
                         }.frame(width:45.0).padding(15.0)
                         
-                        NavigationLink(destination: Stories()){
+                        NavigationLink(destination: Stories().navigationBarBackButtonHidden(true)){
                             Image(systemName: "heart.square").resizable().aspectRatio(contentMode: .fit).foregroundColor(baseGray)
                             
                             
